@@ -1,0 +1,59 @@
+<footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2 class="footer-logo">THE GRIND.</h2>
+                <p class="footer-bio">
+                    A premium coffee experience and collaborative workspace designed for those who grind with purpose.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Social Media</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/27727548705" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Visit Us</h3>
+                <p>123 Coffee Lane, Sandton</p>
+                <p>info@thegrindcoffeecompany.co.za</p>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Project Credits</h3>
+                
+                <p class="dev-names">Lead Developers:</p>
+                <p>Amo Matlhaga & Kea Masole</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p align="center">&copy; <?php echo date("Y"); ?> THE GRIND COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
+            <p align="center" style="color: var(--gold);"><strong>SyreTech Solutions</strong></p>
+        </div>
+    </footer>
+
+    <script>
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-links');
+
+    // Toggle Menu
+    menu.addEventListener('click', function() {
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked (useful for one-page feel)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('is-active');
+            menuLinks.classList.remove('active');
+        });
+    });
+</script>
+
+</body>
+</html>
